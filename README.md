@@ -21,7 +21,8 @@ and running the bundler:
 
 ## Badge
 
-### Adding Badges *(badges_name, user_unique_id, badges_image_path)*
+### Adding Badges
+**(badges_name: String, user_unique_id: Integer, badges_image_path: String)**
 
 Examples:
 
