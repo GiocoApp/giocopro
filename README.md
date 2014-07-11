@@ -26,29 +26,55 @@ and running the bundler:
 Examples:
 
     g = GiocoPro.new
-    g.add_badge('Begginer', user.id)
+    g.add_badge('Begginer', current_user.id)
 
 #### Removing Badges
 
 Example:
 
     g = GiocoPro.new
-    g.remove_badge(1, user.id)
+    g.remove_badge(1, current_user.id)
+
+### Points
+
+#### Adding Points
+
+Examples:
 
     g = GiocoPro.new
-    g.add_points(100,1)
+    g.add_points(100, current_user.id)
+
+#### Removing Points
+
+Example:
 
     g = GiocoPro.new
-    g.remove_points(100,1)
+    g.remove_points(100, current_user.id)
+
+### Level
+
+#### Adding Levels
+
+Examples:
 
     g = GiocoPro.new
-    g.add_level(1,1)
+    g.add_level(1, current_user.id)
+
+#### Removing Levels
+
+Example:
 
     g = GiocoPro.new
-    g.remove_level(1,1)
+    g.remove_level(1, current_user.id)
+
+### Resource
+
+#### Get Levels
+
+Examples:
 
     g = GiocoPro.new
-    g.get_resource(1)
+    g.get_resource(current_user.id)
 
 ## License
 
