@@ -29,13 +29,14 @@ If you can't set an environment variable you can also pass it as an argument whe
 
 ## Resource
 
-### Get Levels
+### Get Resource
 **get_resource** *(user_unique_id: ```Integer```)*
 
 Examples:
 
     g = GiocoPro.new
     g.get_resource(current_user.id)
+
 
 
 ## Badge
@@ -60,6 +61,7 @@ Example:
     g.remove_badge(1, current_user.id)
 
 
+
 ## Points
 
 ### Adding Points
@@ -78,6 +80,7 @@ Example:
 
     g = GiocoPro.new
     g.remove_points(100, current_user.id)
+
 
 
 ## Level
