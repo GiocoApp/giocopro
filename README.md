@@ -17,6 +17,14 @@ and running the bundler:
 
     $ bundle install
 
+# Setup
+
+After install the GiocoPro gem ew strongly recommend you to set an environment variable ```GIOCO_PRO_TOKEN```for you [Application Token](http://app.gioco.pro), you can find it on Manage > Application Token.
+
+If you can't set an environment variable you can also pass it as an argument when instanciating Gioco.
+
+    g = GiocoPro.new('token')
+
 # Usage
 
 ## Badge

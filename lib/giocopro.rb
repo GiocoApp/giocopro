@@ -2,9 +2,9 @@ require 'json'
 require 'net/http'
 
 class GiocoPro
-  def initialize
+  def initialize(token=false)
     @http    = Net::HTTP.new('app.gioco.pro')
-    @headers = {'Content-Type' =>'application/json', 'Token' =>ENV['GIOCO_PRO_TOKEN']}
+    @headers = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCO_PRO_TOKEN']}
   end
 
   def get_resource(aid)
