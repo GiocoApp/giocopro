@@ -19,13 +19,24 @@ and running the bundler:
 
 # Setup
 
-After install the GiocoPro gem ew strongly recommend you to set an environment variable ```GIOCO_PRO_TOKEN```for you [Application Token](http://app.gioco.pro), you can find it on Manage > Application Token.
+After install the GiocoPro gem ew strongly recommend you to set an environment variable ```GIOCO_PRO_TOKEN``` for you [Application Token](http://app.gioco.pro), you can find it on ```Manage > Application Token```.
 
 If you can't set an environment variable you can also pass it as an argument when instanciating Gioco.
 
     g = GiocoPro.new('token')
 
 # Usage
+
+## Resource
+
+### Get Levels
+**get_resource** *(user_unique_id: ```Integer```)*
+
+Examples:
+
+    g = GiocoPro.new
+    g.get_resource(current_user.id)
+
 
 ## Badge
 
@@ -39,6 +50,7 @@ Examples:
 
 The *badge_url* parameter is optional, the image must be smaller then 300x300.
 
+
 ### Removing Badges
 **remove_badge** *(badges_id: ```Integer```, user_unique_id: ```Integer```)*
 
@@ -46,6 +58,7 @@ Example:
 
     g = GiocoPro.new
     g.remove_badge(1, current_user.id)
+
 
 ## Points
 
@@ -57,6 +70,7 @@ Examples:
     g = GiocoPro.new
     g.add_points(100, current_user.id)
 
+
 ### Removing Points
 **remove_points** *(points: ```Integer```, user_unique_id: ```Integer```)*
 
@@ -64,6 +78,7 @@ Example:
 
     g = GiocoPro.new
     g.remove_points(100, current_user.id)
+
 
 ## Level
 
@@ -75,6 +90,7 @@ Examples:
     g = GiocoPro.new
     g.add_level(1, current_user.id)
 
+
 ### Removing Levels
 **remove_level** *(levels: ```Integer```, user_unique_id: ```Integer```)*
 
@@ -83,15 +99,6 @@ Example:
     g = GiocoPro.new
     g.remove_level(1, current_user.id)
 
-## Resource
-
-### Get Levels
-**get_resource** *(user_unique_id: ```Integer```)*
-
-Examples:
-
-    g = GiocoPro.new
-    g.get_resource(current_user.id)
 
 # License
 
