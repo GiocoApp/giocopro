@@ -21,7 +21,7 @@ and running the bundler:
 
 ## Badge
 
-### Adding Badges
+### Adding Badges *(badges_name, user_unique_id, badges_image_path)*
 
 Examples:
 
