@@ -22,7 +22,7 @@ and running the bundler:
 ## Badge
 
 ### Adding Badges
-**add_badge** *(badges_name: String, user_unique_id: Integer, badges_image_path: String)*
+**add_badge** *(badges_name: ```String```, user_unique_id: ```Integer```, badges_image_path: ```String```)*
 
 Examples:
 
@@ -32,7 +32,7 @@ Examples:
 The *badge_url* parameter is optional, the image must be smaller then 300x300.
 
 ### Removing Badges
-**remove_badge** *(badges_id: Integer, user_unique_id: Integer)*
+**remove_badge** *(badges_id: ```Integer```, user_unique_id: ```Integer```)*
 
 Example:
 
@@ -42,7 +42,7 @@ Example:
 ## Points
 
 ### Adding Points
-**add_points** *(points: Integer, user_unique_id: Integer)*
+**add_points** *(points: ```Integer```, user_unique_id: ```Integer```)*
 
 Examples:
 
@@ -50,7 +50,7 @@ Examples:
     g.add_points(100, current_user.id)
 
 ### Removing Points
-**remove_points** *(points: Integer, user_unique_id: Integer)*
+**remove_points** *(points: ```Integer```, user_unique_id: ```Integer```)*
 
 Example:
 
@@ -60,7 +60,7 @@ Example:
 ## Level
 
 ### Adding Levels
-**add_level** *(levels: Integer, user_unique_id: Integer)*
+**add_level** *(levels: ```Integer```, user_unique_id: ```Integer```)*
 
 Examples:
 
@@ -68,7 +68,7 @@ Examples:
     g.add_level(1, current_user.id)
 
 ### Removing Levels
-**remove_level** *(levels: Integer, user_unique_id: Integer)*
+**remove_level** *(levels: ```Integer```, user_unique_id: ```Integer```)*
 
 Example:
 
@@ -78,7 +78,7 @@ Example:
 ## Resource
 
 ### Get Levels
-**get_resource** *(user_unique_id: Integer)*
+**get_resource** *(user_unique_id: ```Integer```)*
 
 Examples:
 
