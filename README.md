@@ -17,65 +17,67 @@ and running the bundler:
 
     $ bundle install
 
-## Usage
+# Usage
 
-### Badge
+## Badge
 
-#### Adding Badges
+### Adding Badges
 
 Examples:
 
     g = GiocoPro.new
-    g.add_badge('Begginer', current_user.id)
+    g.add_badge('Begginer', current_user.id, 'http://badge_url.jpg')
 
-#### Removing Badges
+The *badge_url* parameter is optional, the image must be smaller then 300x300.
+
+### Removing Badges
 
 Example:
 
     g = GiocoPro.new
     g.remove_badge(1, current_user.id)
 
-### Points
+## Points
 
-#### Adding Points
+### Adding Points
 
 Examples:
 
     g = GiocoPro.new
     g.add_points(100, current_user.id)
 
-#### Removing Points
+### Removing Points
 
 Example:
 
     g = GiocoPro.new
     g.remove_points(100, current_user.id)
 
-### Level
+## Level
 
-#### Adding Levels
+### Adding Levels
 
 Examples:
 
     g = GiocoPro.new
     g.add_level(1, current_user.id)
 
-#### Removing Levels
+### Removing Levels
 
 Example:
 
     g = GiocoPro.new
     g.remove_level(1, current_user.id)
 
-### Resource
+## Resource
 
-#### Get Levels
+### Get Levels
 
 Examples:
 
     g = GiocoPro.new
     g.get_resource(current_user.id)
 
-## License
+# License
 
 **Gioco** is released under the [MIT license](www.opensource.org/licenses/MIT).
