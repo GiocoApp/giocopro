@@ -22,7 +22,7 @@ and running the bundler:
 ## Badge
 
 ### Adding Badges
-**(badges_name: String, user_unique_id: Integer, badges_image_path: String)**
+**add_badge** *(badges_name: **String**, user_unique_id: **Integer**, badges_image_path: **String**)*
 
 Examples:
 
