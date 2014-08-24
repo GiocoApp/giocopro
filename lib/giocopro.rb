@@ -3,7 +3,7 @@ require 'net/http'
 
 class GiocoPro
   def initialize(token=false)
-    @http    = Net::HTTP.new('localhost:3000')
+    @http    = Net::HTTP.new('app.gioco.pro')
     @headers = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCO_PRO_TOKEN']}
   end
 
