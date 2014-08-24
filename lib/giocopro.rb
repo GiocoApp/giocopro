@@ -34,11 +34,6 @@ class GiocoPro
     request!(data, aid, req)
   end
 
-  def delete_data(url, aid, data = nil)
-    req = Net::HTTP::Delete.new(('/api/' + url), @headers)
-    request!(data, aid, req)
-  end
-
   def request!(data, aid, req)
     req.body = resource_data(data, aid).to_json
     res      = @http.request(req)
