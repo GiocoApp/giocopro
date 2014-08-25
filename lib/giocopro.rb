@@ -12,7 +12,7 @@ class GiocoPro
   end
 
   def track_event(name, aid)
-    data                              = {'event' => {'name' => name}}
+    data = {'event' => {'name' => name}}
     post_data('track_event.json', aid, data)
   end
 
