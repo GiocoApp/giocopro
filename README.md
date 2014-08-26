@@ -39,7 +39,8 @@ Gioco will bind some method to your **Resource Model**, it will enable you to ea
 
 Examples:
 
-    current_user.get_resource
+    current_user.gioco_data
+
     # RESPONSE:
     # {
     # "aid"=>1,
@@ -56,11 +57,12 @@ Examples:
 ## Events
 
 ### Tracking Events
-**track_event** *(events_name: ```String``)*
+**track_event** *(events_name: ```String```)*
 
 Examples:
 
     current_user.track_event('Login')
+
     # RESPONSE:
     # {
     # "aid"=>1,
