@@ -40,7 +40,18 @@ Gioco will bind some method to your **Resource Model**, it will enable you to ea
 Examples:
 
     current_user.get_resource
-    #
+    # RESPONSE:
+    # {
+    # "aid"=>1,
+    # "badges"=> [
+    #   {
+    #     "name"=>"Begginer",
+    #     "image_url"=>
+    #       "http://giocopro.s3.amazonaws.com/2014/08/26/07/32/53/772/begginer_badge_image.jpg"
+    #     }
+    #   ]
+    # }
+
 
 ## Events
 
@@ -50,7 +61,17 @@ Examples:
 Examples:
 
     current_user.track_event('Login')
-    #
+    # RESPONSE:
+    # {
+    # "aid"=>1,
+    # "badges"=> [
+    #   {
+    #     "name"=>"Begginer",
+    #     "image_url"=>
+    #       "http://giocopro.s3.amazonaws.com/2014/08/26/07/32/53/772/begginer_badge_image.jpg"
+    #     }
+    #   ]
+    # }
 
 # License
 
