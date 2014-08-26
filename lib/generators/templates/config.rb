@@ -1,0 +1,1 @@
+require 'giocopro/gioco_resource'
