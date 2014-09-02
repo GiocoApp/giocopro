@@ -70,7 +70,7 @@ current_user.track_event('Login')
     "badges" => [
         "image_url" => "http://image_url.png",
         "name" => "Begginer"
-    ]
+    ],
     "level" => 1,
     "points" => 100,
     "new_stats" => [  #It is an array of objects with the new implementations that resource just won
