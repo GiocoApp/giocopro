@@ -39,8 +39,10 @@ Gioco will bind some method to your **Resource Model**, it will enable you to ea
 
 Examples:
     
-```rubycurrent_user.gioco_data
-
+```ruby
+current_user.gioco_data
+```
+```json
  #RESPONSE:
  {
     "resource" => {
@@ -50,7 +52,7 @@ Examples:
       "updated_at" => "2014-09-02T11:10:35.170Z", 
       "user_application_id" => 3
     }, 
-    "new_info" => nil
+    "new_info" => nil   #It is an array of objects with the new implementations that resource just won
  }
 ```
 
@@ -61,8 +63,10 @@ Examples:
 
 Examples:
 
-```rubycurrent_user.track_event('Login')
-
+```ruby
+current_user.track_event('Login')
+```
+```json
  RESPONSE:
  {
   "resource" => {
@@ -78,6 +82,7 @@ Examples:
       }
     ]
   }, 
+  #It is an array of objects with the new implementations that resource just won
   "new_info" => [
     {
       badge: {
