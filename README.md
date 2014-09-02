@@ -43,14 +43,15 @@ Examples:
 
     # RESPONSE:
     # {
-    # "aid"=>1,
-    # "badges"=> [
-    #   {
-    #     "name"=>"Begginer",
-    #     "image_url"=>
-    #       "http://giocopro.s3.amazonaws.com/2014/08/26/07/32/53/772/begginer_badge_image.jpg"
-    #     }
-    #   ]
+    #    "resource"=>
+    #        {
+    #            "id"=>1547, 
+    #            "aid"=>3, 
+    #            "created_at"=>"2014-09-02T11:10:35.170Z", 
+    #            "updated_at"=>"2014-09-02T11:10:35.170Z", 
+    #            "user_application_id"=>3
+    #        }, 
+    #    "new_info"=>nil
     # }
 
 
@@ -65,14 +66,21 @@ Examples:
 
     # RESPONSE:
     # {
-    # "aid"=>1,
-    # "badges"=> [
-    #   {
-    #     "name"=>"Begginer",
-    #     "image_url"=>
-    #       "http://giocopro.s3.amazonaws.com/2014/08/26/07/32/53/772/begginer_badge_image.jpg"
-    #     }
-    #   ]
+    #    "resource"=>
+    #        {
+    #            "id"=>1547, 
+    #            "aid"=>3, 
+    #            "created_at"=>"2014-09-02T11:10:35.170Z", 
+    #            "updated_at"=>"2014-09-02T11:10:35.170Z", 
+    #            "user_application_id"=>3,
+    #            "badges"=> [
+    #                   {
+    #                       "name"=>"Begginer",
+    #                       "image_url"=>"http://giocopro.s3.amazonaws.com/2014/08/26/07/32/53/772/begginer_badge_image.jpg"
+    #                   }
+    #               ]
+    #        }, 
+    #   "new_info"=>nil
     # }
 
 # License
