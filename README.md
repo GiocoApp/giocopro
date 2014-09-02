@@ -48,7 +48,7 @@ current_user.gioco_data
     "aid" => 25,
     "badges" => [],
     "level" => nil,
-    "new_stats" => nil,
+    "new_stats" => nil, # Array of the implementations that the resource just received
     "points" => 0
   }
 ```
