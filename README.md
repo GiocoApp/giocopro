@@ -73,7 +73,7 @@ current_user.track_event('Login')
     ],
     "level" => 1,
     "points" => 100,
-    "new_stats" => [  #It is an array of objects with the new implementations that resource just won
+    "new_stats" => [  # Array of the implementations that the resource just received
         {
           "badge" => {
             "image_url" => "http://image_url.png",
