@@ -68,28 +68,30 @@ current_user.track_event('Login')
   {
     "aid" => 25,
     "badges" => [
-    "image_url" => "http://image_url.png",
-    "name" => "Begginer"
+        "image_url" => "http://image_url.png",
+        "name" => "Begginer"
+    ]
     "level" => 1,
     "points" => 100,
     "new_stats" => [  #It is an array of objects with the new implementations that resource just won
-    {
-      "badge" => {
-        "image_url" => "http://image_url.png",
-        "name" => "Begginer"
-      }
-    }
-    {
-      "point" => {
-        "name" => "Test Points",
-        "points" => 100
-      }
-    }
-    {
-      "level" => {
-        "levels" => 1
-      }
-    }
+        {
+          "badge" => {
+            "image_url" => "http://image_url.png",
+            "name" => "Begginer"
+          }
+        }
+        {
+          "point" => {
+            "name" => "Test Points",
+            "points" => 100
+          }
+        }
+        {
+          "level" => {
+            "levels" => 1
+          }
+        }
+    ]
   }
 ```
 
