@@ -41,17 +41,16 @@ Examples:
     
 ```rubycurrent_user.gioco_data
 
- RESPONSE:
+ #RESPONSE:
  {
-    "resource"=>
-        {
-            "id"=>1547, 
-            "aid"=>3, 
-            "created_at"=>"2014-09-02T11:10:35.170Z", 
-            "updated_at"=>"2014-09-02T11:10:35.170Z", 
-            "user_application_id"=>3
-        }, 
-    "new_info"=>nil
+    "resource" => {
+      "id" => 1547, 
+      "aid" => 3, 
+      "created_at" => "2014-09-02T11:10:35.170Z", 
+      "updated_at" => "2014-09-02T11:10:35.170Z", 
+      "user_application_id" => 3
+    }, 
+    "new_info" => nil
  }
 ```
 
@@ -66,36 +65,33 @@ Examples:
 
  RESPONSE:
  {
-    "resource"=>
-        {
-            "id"=>1547, 
-            "aid"=>3, 
-            "created_at"=>"2014-09-02T11:10:35.170Z", 
-            "updated_at"=>"2014-09-02T11:10:35.170Z", 
-            "user_application_id"=>3,
-            "badges"=> [
-                   {
-                       "name"=>"Begginer",
-                       "image_url"=>"http://giocopro.s3.amazonaws.com/2014/08/26/07/32/53/772/begginer_badge_image.jpg"
-                   }
-               ]
-        }, 
-   "new_info"=> 
-        [
-            {
-                badge: 
-                    {
-                        "id"=>8,
-                        "name"=>"Begginer",
-                        "created_at"=>"2014-08-29T05:14:09.107Z",
-                        "updated_at"=>"2014-09-02T03:01:08.256Z",
-                        "user_application_id"=>2,
-                        "image_uid"=>"2014/08/29/05/14/08/969/logo_white.png",
-                        "image_name"=>"logo-white.png",
-                        "resources_number"=>610   
-                    }
-            }
-        ]
+  "resource" => {
+    "id" => 1547, 
+    "aid" => 3, 
+    "created_at" => "2014-09-02T11:10:35.170Z", 
+    "updated_at" => "2014-09-02T11:10:35.170Z", 
+    "user_application_id" => 3,
+    "badges" => [
+      {
+        "name" => "Begginer",
+        "image_url" => "http://image_url.jpg"
+      }
+    ]
+  }, 
+  "new_info" => [
+    {
+      badge: {
+        "id" => 8,
+        "name" => "Begginer",
+        "created_at" => "2014-08-29T05:14:09.107Z",
+        "updated_at" => "2014-09-02T03:01:08.256Z",
+        "user_application_id" => 2,
+        "image_uid" => "2014/08/29/05/14/08/969/logo_white.png",
+        "image_name" => "logo-white.png",
+        "resources_number" => 610   
+      }
+    }
+  ]
  }
 ```
 
