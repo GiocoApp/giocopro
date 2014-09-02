@@ -80,7 +80,22 @@ Examples:
     #                   }
     #               ]
     #        }, 
-    #   "new_info"=>nil
+    #   "new_info"=> 
+    #        [
+    #            {
+    #                badge: 
+    #                    {
+    #                        "id"=>8,
+    #                        "name"=>"Bola Murcha",
+    #                        "created_at"=>"2014-08-29T05:14:09.107Z",
+    #                        "updated_at"=>"2014-09-02T03:01:08.256Z",
+    #                        "user_application_id"=>2,
+    #                        "image_uid"=>"2014/08/29/05/14/08/969/logo_white.png",
+    #                        "image_name"=>"logo-white.png",
+    #                        "resources_number"=>610   
+    #                    }
+    #            }
+    #        ]
     # }
 
 # License
