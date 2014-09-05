@@ -26,7 +26,7 @@ and running the bundler:
 
 Next, you will be prompted to provide your **Resource Model**. This is generally the **User** model.
 
-After install the GiocoPro gem we strongly recommend you to set an environment variable ```GIOCO_PRO_TOKEN``` for you [Application Token](http://app.gioco.pro), you can find it on ```Manage > Application Token```.
+After install the GiocoPro gem we strongly recommend you to set an environment variable ```GIOCOPRO_TOKEN``` for you [Application Token](http://app.gioco.pro), you can find it on ```Manage > Application Token```.
 
 # Usage
 

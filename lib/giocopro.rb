@@ -5,7 +5,7 @@ module GiocoPro
   class GiocoPro
     def initialize(token=false)
       @http    = Net::HTTP.new('app.gioco.pro')
-      @headers = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCO_PRO_TOKEN']}
+      @headers = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCOPRO_TOKEN']}
     end
 
     def get_resource(aid)
