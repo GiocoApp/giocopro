@@ -1,8 +1,8 @@
 require 'rails/generators/base'
-require 'generators/gioco_pro/model_generator'
-require 'generators/gioco_pro/generator_instructions'
+require 'generators/giocopro/model_generator'
+require 'generators/giocopro/generator_instructions'
 
-module GiocoPro
+module Giocopro
   class SetupGenerator < Rails::Generators::Base
     include ModelGenerator
     include GeneratorInstructions
