@@ -1,6 +1,6 @@
 ![Alt text](http://joaomdmoura.github.io/gioco/assets/images/logo.png "A gamification gem for Ruby on Rails applications")
 
-# Gioco Pro (current version - 0.0.1)
+# Gioco Pro (current version - 0.0.3)
 Gioco Pro gem is the SDK of Gioco Pro service for **Rails Applications**.
 A easy way to implement gamification based on plug and play concept. Doesn't matter if you already have a full and functional database, Gioco will smoothly integrate everything and provide all methods and analytics that you might need.
 
@@ -38,7 +38,7 @@ Gioco will bind some method to your **Resource Model**, it will enable you to ea
 **gioco_data**
 
 Examples:
-    
+
 ```ruby
 current_user.gioco_data
 ```
