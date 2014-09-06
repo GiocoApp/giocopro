@@ -6,6 +6,9 @@ module GiocoPro
     def initialize(token=false)
       @http    = Net::HTTP.new('app.gioco.pro')
       @headers = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCOPRO_TOKEN']}
+      if token.nil? && ENV['GIOCOPRO_TOKEN'].nil?
+        return true # nothing should happen
+      end
     end
 
     def get_resource(aid)
