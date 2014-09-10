@@ -1,4 +1,4 @@
-![Alt text](http://giocoapp.github.io/gioco/assets/images/logo.png "A gamification gem for Ruby on Rails applications")
+![Alt text](http://gioco.pro/wp-content/uploads/2014/09/logo_small2.png "A gamification gem for Ruby on Rails applications")
 
 # Gioco Pro (current version - 0.0.3)
 Gioco Pro gem is the SDK of Gioco Pro service for **Rails Applications**.
