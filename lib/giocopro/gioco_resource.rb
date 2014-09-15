@@ -8,6 +8,6 @@ module GiocoResource
   end
 
   def gioco_object
-    GiocoPro::GiocoPro.new
+    Giocopro::Giocopro.new
   end
 end
