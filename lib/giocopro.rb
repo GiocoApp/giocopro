@@ -4,8 +4,10 @@ require 'net/http'
 module Giocopro
   class Giocopro
     def initialize(token=false)
-      @http    = Net::HTTP.new('app.gioco.pro')
-      @headers = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCOPRO_TOKEN']}
+      @http             = Net::HTTP.new('app.gioco.pro', 443)
+      @http.use_ssl     = true
+      @http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+      @headers          = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCOPRO_TOKEN']}
       if token.nil? && ENV['GIOCOPRO_TOKEN'].nil?
         return true # nothing should happen
       end
