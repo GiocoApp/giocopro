@@ -30,9 +30,13 @@ After install the GiocoPro gem we strongly recommend you to set an environment v
 
 # Usage
 
+-----------
+
 ## You can already access your dashboard at [Gioco Pro](http://app.gioco.pro) and start to setup you application. It has it's own tutorial and is quite simple!
 
 ### After yoru application send the frist events you will be ready to create your badges, points and levels
+
+-----------
 
 Gioco will bind some method to your **Resource Model**, it will enable you to easily retrieve and track your users data inside your application.
 
