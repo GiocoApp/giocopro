@@ -7,8 +7,8 @@ module GiocoResource
     gioco_object.track_event(name, self.id)
   end
 
-  def ranking
-    gioco_object.ranking
+  def ranking(size=100, batch=1)
+    gioco_object.ranking(size, batch)
   end
 
   def gioco_object

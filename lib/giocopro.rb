@@ -22,8 +22,9 @@ module Giocopro
       post_data('track_event.json', aid, data)
     end
 
-    def ranking
-      get_data('ranking/retrieve.json')
+    def ranking(size, batch)
+      data = {'size' => size, 'batch' => batch}
+      get_data('ranking/retrieve.json', nil, data)
     end
 
     private
@@ -34,9 +35,9 @@ module Giocopro
       data
     end
 
-    def get_data(url, aid=nil)
+    def get_data(url, aid=nil, data=nil)
       req = Net::HTTP::Get.new(('/api/' + url), @headers)
-      request!(nil, aid, req)
+      request!(data, aid, req)
     end
 
     def post_data(url, aid, data)
