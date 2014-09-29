@@ -7,6 +7,10 @@ module GiocoResource
     gioco_object.track_event(name, self.id)
   end
 
+  def ranking
+    gioco_object.ranking
+  end
+
   def gioco_object
     Giocopro::Giocopro.new
   end

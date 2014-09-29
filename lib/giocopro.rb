@@ -9,7 +9,7 @@ module Giocopro
       @http.verify_mode = OpenSSL::SSL::VERIFY_NONE
       @headers          = {'Content-Type' =>'application/json', 'Token' =>(token) ? token : ENV['GIOCOPRO_TOKEN']}
       if token.nil? && ENV['GIOCOPRO_TOKEN'].nil?
-        return true # nothing should happen
+        return true
       end
     end
 
@@ -22,15 +22,19 @@ module Giocopro
       post_data('track_event.json', aid, data)
     end
 
+    def ranking
+      get_data('ranking/retrieve.json')
+    end
+
     private
 
     def resource_data(data, aid)
       data         ||= {}
-      data['resource'] = {'aid' => aid}
+      data['resource'] = {'aid' => aid} if aid
       data
     end
 
-    def get_data(url, aid)
+    def get_data(url, aid=nil)
       req = Net::HTTP::Get.new(('/api/' + url), @headers)
       request!(nil, aid, req)
     end
