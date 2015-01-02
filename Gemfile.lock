@@ -1,16 +1,14 @@
 PATH
   remote: .
   specs:
-    giocopro (0.0.1)
+    giocopro (0.0.8)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   giocopro!
-  rake (= 10.1.0)
