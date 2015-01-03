@@ -1,6 +1,6 @@
 ![Alt text](http://gioco.pro/wp-content/uploads/2014/09/logo_small2.png "A gamification gem for Ruby on Rails applications")
 
-# Gioco Pro (current version - 0.0.8)
+# Gioco Pro (current version - 0.0.9)
 Gioco Pro gem is the SDK of Gioco Pro service for **Rails Applications**.
 A easy way to implement gamification based on plug and play concept. Doesn't matter if you already have a full and functional database, Gioco will smoothly integrate everything and provide all methods and analytics that you might need.
 
@@ -22,21 +22,13 @@ and running the bundler:
 
 **To setup Gioco with your application:**
 
-    rails g giocopro:setup
+    rails g giocopro:setup --secret [YOUR_SECRET_KEY_HERE]
+
+Replace [YOUR_SECRET_KEY_HERE] for you token. It can be found [HERE](http://app.gioco.pro) on ```Manage > Application Token```.
 
 Next, you will be prompted to provide your **Resource Model**. This is generally the **User** model.
 
-After install the GiocoPro gem we strongly recommend you to set an environment variable ```GIOCOPRO_TOKEN``` for you [Application Token](http://app.gioco.pro), you can find it on ```Manage > Application Token```.
-
 # Usage
-
------------
-
-### You can already access your dashboard at [Gioco Pro](http://app.gioco.pro) and start to setup you application. It has it's own tutorial and is quite simple!
-(After your application send the frist events you will be ready to create your badges, points and levels)
-
------------
-
 
 Gioco will bind some method to your **Resource Model**, it will enable you to easily retrieve and track your users data inside your application.
 
