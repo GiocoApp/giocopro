@@ -13,7 +13,7 @@ module Giocopro
 
     def execute
       @secret_key = options['secret']
-      @model_name = ask("What is your resource model name? (eg. user)")
+      @model_name = ask("What is your user model name? (eg. user)")
       adding_methods
       instructions
     end
